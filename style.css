@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 80px 1fr 150px;
+  height: 100vh;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+.logo_container {
+  display: flex;
+  gap: 12px;
+}
+
+.header_logo {
+  height: 48px;
+}
+
+.header ul {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.header li {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header li:hover {
+  color: rgba(255, 255, 255, .75);
+}
+
+.expand_icon {
+  height: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #242427;
+  color: white;
+  line-height: 1.5em;
+}
+
+.footer_logo_contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright {
+  display: flex;
+}
+
+.footer_logo {
+  height: 80px;
+}
