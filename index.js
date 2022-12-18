@@ -1,4 +1,5 @@
 servicesMenu = document.querySelector(".services");
+modal = document.querySelector(".modal");
 servicesMenu.addEventListener("mouseover", showModal);
 
 function showModal() {
