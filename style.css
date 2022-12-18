@@ -30,12 +30,13 @@ time, mark, audio, video {
 }
 
 body {
-  display: grid;
-  grid-template-rows: 80px 1fr 150px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
+  position: sticky;
+  top: 0;
   background-color: black;
   display: flex;
   align-items: center;
@@ -73,6 +74,10 @@ body {
 
 .expand_icon {
   height: 20px;
+}
+
+.content {
+  height: 100vh;
 }
 
 .footer {
