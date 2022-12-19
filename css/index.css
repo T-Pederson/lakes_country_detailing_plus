@@ -149,6 +149,21 @@ time, mark, audio, video {
   background-color: #ddd;
 }
 
+.image_links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.image_links img {
+  height: 250px;
+  border-radius: 3px;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -156,7 +171,7 @@ time, mark, audio, video {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 12px;
+  padding: 12px 0;
   background-color: black;
   color: white;
   line-height: 1.5em;
