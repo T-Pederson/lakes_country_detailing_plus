@@ -29,11 +29,6 @@ time, mark, audio, video {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .header {
   position: sticky;
   top: 0;
@@ -105,31 +100,18 @@ body {
   height: auto;
 }
 
-.content {
-  height: calc(100vh - 80px - 150px);
-}
-
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 126px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 12px;
-  background-color: #242427;
+  background-color: black;
   color: white;
   line-height: 1.5em;
-
-}
-
-.footer_logo_contact {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.copyright {
-  display: flex;
+  text-align: center;
 }
 
 .footer_logo {
