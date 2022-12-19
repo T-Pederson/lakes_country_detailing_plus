@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  z-index: 1;
+}
+
+.logo_container {
+  display: flex;
+  gap: 12px;
+}
+
+.header_logo {
+  height: 48px;
+}
+
+.navbar_container {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navbar_container > p,
+.navbar_container > a,
+.navbar_container > div {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar_container p:hover,
+.navbar_container div:hover {
+  color: rgba(255, 255, 255, .5);
+}
+
+.arrow_icon {
+  height: 20px;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #242427;
+  top: 0;
+  right: 0;
+  margin-top: 80px;
+  padding: 4px 16px 12px 8px;
+  border-radius: 0 0 8px 8px;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+}
+
+.modal div {
+  color: white;
+  display: flex;
+  padding: 8px 0;
+}
+
+.services:hover .modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 48px;
+}
+
+hr {
+  width: 1000px;
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  font-size: 1.1em;
+  line-height: 2em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.contact a {
+  color: black
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer_logo {
+  height: 80px;
+}
