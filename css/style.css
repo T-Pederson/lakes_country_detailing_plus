@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 * {
@@ -69,7 +69,7 @@ time, mark, audio, video {
 
 .navbar_container p:hover,
 .navbar_container div:hover {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .5);
 }
 
 .arrow_icon {
@@ -85,7 +85,7 @@ time, mark, audio, video {
   right: 0;
   margin-top: 80px;
   margin-right: 40px;
-  padding: 6px 16px 12px 8px;
+  padding: 4px 16px 12px 8px;
   border-radius: 0 0 8px 8px;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -95,7 +95,7 @@ time, mark, audio, video {
 .modal div {
   color: white;
   display: flex;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 
 .services:hover .modal {
@@ -110,23 +110,38 @@ time, mark, audio, video {
 
 .hero_image {
   width: 100%;
-  height: auto;
+  height: 450px;
+  object-fit: cover;
 }
 
-.request_quote {
+.hero div {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 0;
+}
+
+.hero p {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.request_quote {
   border: none;
   background-color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 0.4em;
   background-color: #fff;
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 10px 24px;
   cursor: pointer;
 }
 
@@ -146,6 +161,14 @@ time, mark, audio, video {
   color: white;
   line-height: 1.5em;
   text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer_logo {
