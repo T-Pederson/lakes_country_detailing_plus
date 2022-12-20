@@ -31,7 +31,7 @@ time, mark, audio, video {
 
 body {
   display: grid;
-  grid-template-rows: 100px 450px 1fr 100px;
+  grid-template-rows: 90px 450px 1fr 100px;
   height: 100vh;
 }
 
@@ -196,7 +196,8 @@ body {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   padding: 12px 0;
