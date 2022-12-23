@@ -82,14 +82,18 @@ body {
   height: 20px;
 }
 
-.mobile_navbar {
+.menu {
+  display: none;
+}
+
+.mobile_dropdown {
   display: none;
 }
 
 .modal {
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 354px;
   flex-direction: column;
   background-color: #242427;
   top: 0;
@@ -106,6 +110,7 @@ body {
   color: white;
   display: flex;
   padding: 8px 0;
+  flex-wrap: nowrap;
 }
 
 .services:hover .modal {
@@ -232,9 +237,9 @@ body {
 
 @media (max-width: 1200px) {
   body {
-    grid-template-rows: 60px 250px 1fr 80px;
+    grid-template-rows: 60px auto 1fr 1fr 80px;
   }
-  
+
   .navbar_container {
     display: none;
   }
@@ -247,9 +252,48 @@ body {
     height: 24px;
   }
 
-  .mobile_navbar {
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu:active {
+    opacity: .5;
+  }
+
+  .mobile_dropdown {
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    background-color: black;
+    color: white;
+  }
+
+  .services_dropdown {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+  }
+
+  .mobile_services {
     display: flex;
-    position: relative;
+    cursor: pointer;
+  }
+
+  .service div {
+    padding-left: 12px;
+    display: flex;
+    color: white;
+  }
+
+  .mobile_dropdown > a {
+    color: white;
+  }
+
+  .mobile_services_dropdown {
+    display: flex;
+    flex-direction: column;
   }
 
   .hero div {
