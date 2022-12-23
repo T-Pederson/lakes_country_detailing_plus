@@ -166,6 +166,10 @@ body {
   background-color: #ddd;
 }
 
+button {
+  color: black;
+}
+
 .content {
   display: flex;
   justify-content: center;
@@ -237,7 +241,7 @@ body {
 
 @media (max-width: 1200px) {
   body {
-    grid-template-rows: 60px auto 1fr 1fr 80px;
+    grid-template-rows: 60px auto 1fr 80px;
   }
 
   .navbar_container {
@@ -313,7 +317,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     font-size: .8em;
-    padding: 8px;
+    padding: 16px 8px;
     gap: 4px;
     line-height: 1.5em;
   }
