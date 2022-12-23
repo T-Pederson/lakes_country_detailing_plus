@@ -170,6 +170,7 @@ body {
 
 button {
   color: black;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -274,6 +275,7 @@ button {
     padding-left: 8px;
     background-color: black;
     color: white;
+    font-weight: bold;
   }
 
   .services_dropdown {
