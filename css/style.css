@@ -314,10 +314,6 @@ button {
     font-size: 0.6em;
   }
 
-  .content {
-    height: fit-content;
-  }
-
   .image_links p {
     font-size: 1em;
   }
@@ -338,5 +334,11 @@ button {
 
   .footer_logo {
     height: 48px;
+  }
+}
+
+@media (max-width: 813px) {
+  .content {
+    height: fit-content;
   }
 }

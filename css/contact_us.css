@@ -60,3 +60,9 @@ hr {
     height: 300px;
   }
 }
+
+@media (max-width: 813px) {
+  .content {
+    height: 100%;
+  }
+}
