@@ -313,6 +313,14 @@ button {
     padding: 20px 0;
   }
 
+  .request_quote {
+    font-size: 0.6em;
+  }
+
+  .image_links p {
+    font-size: 1em;
+  }
+
   .footer {
     display: grid;
     grid-template-columns: auto auto;
