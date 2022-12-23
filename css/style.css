@@ -31,7 +31,7 @@ time, mark, audio, video {
 
 body {
   display: grid;
-  grid-template-rows: 90px 450px 1fr 100px;
+  grid-template-rows: auto auto 1fr auto;
   height: 100vh;
 }
 
@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 48px;
+  padding: 6px 48px;
   z-index: 1;
 }
 
@@ -241,7 +241,7 @@ button {
 
 @media (max-width: 1200px) {
   body {
-    grid-template-rows: 60px auto 1fr 80px;
+    grid-template-rows: auto auto 1fr auto;
   }
 
   .navbar_container {
@@ -249,7 +249,7 @@ button {
   }
 
   .header {
-    padding: 0 16px;
+    padding: 16px 16px;
   }
 
   .menu, .header_logo {
@@ -317,7 +317,7 @@ button {
     display: grid;
     grid-template-columns: auto auto;
     font-size: .8em;
-    padding: 16px 8px;
+    padding: 12px 8px;
     gap: 4px;
     line-height: 1.5em;
   }

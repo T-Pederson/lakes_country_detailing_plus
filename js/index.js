@@ -10,10 +10,10 @@ mobileServices.addEventListener("click", toggle_services_dropdown);
 function toggle_mobile_navbar() {
   if (getComputedStyle(mobileDropdown).display == "none") {
     mobileDropdown.style.display = "flex";
-    body.style.gridTemplateRows = "60px auto auto 1fr 80px";
+    body.style.gridTemplateRows = "auto auto auto 1fr auto";
   } else {
     mobileDropdown.style.display = "none";
-    body.style.gridTemplateRows = "60px auto 1fr 80px";
+    body.style.gridTemplateRows = "auto auto 1fr auto";
   }
 }
 
