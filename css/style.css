@@ -177,7 +177,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: fit-content;
 }
 
 .image_links {
