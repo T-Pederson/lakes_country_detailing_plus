@@ -98,11 +98,12 @@ body {
   background-color: #242427;
   top: 0;
   right: 0;
-  margin-top: 85px;
+  margin-top: 86px;
   padding: 4px 16px 12px 8px;
   border-radius: 0 0 8px 8px;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+  transition-delay: 0.5s;
   opacity: 0;
 }
 
@@ -116,6 +117,7 @@ body {
 .services:hover .modal {
   visibility: visible;
   opacity: 1;
+  transition-delay: 0s;
 }
 
 .hero {
