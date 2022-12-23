@@ -2,7 +2,7 @@ body = document.querySelector("body");
 menu = document.querySelector(".menu");
 mobileDropdown = document.querySelector(".mobile_dropdown");
 mobileServices = document.querySelector(".mobile_services");
-servicesDropdown = document.querySelector(".services_dropdown");
+servicesDropdown = document.querySelector(".mobile_services_dropdown");
 
 menu.addEventListener("click", toggle_mobile_navbar);
 mobileServices.addEventListener("click", toggle_services_dropdown);

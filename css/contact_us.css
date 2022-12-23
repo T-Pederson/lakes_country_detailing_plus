@@ -1,9 +1,4 @@
-body {
-  grid-template-rows: auto 1fr auto;
-}
-
 .content {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
