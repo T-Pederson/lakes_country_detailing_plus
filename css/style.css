@@ -30,8 +30,8 @@ time, mark, audio, video {
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -177,6 +177,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .image_links {

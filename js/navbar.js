@@ -10,10 +10,8 @@ mobileServices.addEventListener("click", toggle_services_dropdown);
 function toggle_mobile_navbar() {
   if (getComputedStyle(mobileDropdown).display == "none") {
     mobileDropdown.style.display = "flex";
-    body.style.gridTemplateRows = "auto auto auto 1fr auto";
   } else {
     mobileDropdown.style.display = "none";
-    body.style.gridTemplateRows = "auto auto 1fr auto";
   }
 }
 
