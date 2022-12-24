@@ -1,0 +1,107 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 36px 12px;
+  gap: 36px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+.featured_image {
+  width: 1200px;
+  height: 900px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.step_by_step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.2em;
+}
+
+.before_and_after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  justify-items: center;
+  max-width: 1200px;
+}
+
+.before_and_after_image {
+  width: 588px;
+  height: 441px;
+  object-fit: cover;
+}
+
+.request_quote {
+  font-size: 1.4em;
+  background-color: #bbb;
+}
+
+@media (max-width: 1200px) {
+  .featured_image {
+    width: 776px;
+    height: 582px;
+  }
+
+  .before_and_after_image {
+    width: 376px;
+    height: 282px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+  
+  .featured_image {
+    width: 326px;
+    height: 244.5px;
+  }
+
+  .before_and_after_image {
+    width: 151px;
+    height: 113.25px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .step_by_step {
+    font-size: 1em;
+  }
+
+  .request_quote {
+    font-size: 1em;
+  }
+}
