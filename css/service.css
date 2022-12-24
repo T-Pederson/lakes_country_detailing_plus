@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding: 36px 12px;
+  padding: 36px 16px;
   gap: 36px;
 }
 
@@ -22,8 +22,10 @@ h1 {
 }
 
 .featured_image {
-  width: 1200px;
-  height: 900px;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
@@ -49,26 +51,15 @@ h2 {
 }
 
 .before_and_after_image {
-  width: 588px;
-  height: 441px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 .request_quote {
   font-size: 1.4em;
   background-color: #bbb;
-}
-
-@media (max-width: 1200px) {
-  .featured_image {
-    width: 776px;
-    height: 582px;
-  }
-
-  .before_and_after_image {
-    width: 376px;
-    height: 282px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -83,16 +74,6 @@ h2 {
 
   .description {
     font-size: 1em;
-  }
-  
-  .featured_image {
-    width: 326px;
-    height: 244.5px;
-  }
-
-  .before_and_after_image {
-    width: 151px;
-    height: 113.25px;
   }
 
   h2 {
