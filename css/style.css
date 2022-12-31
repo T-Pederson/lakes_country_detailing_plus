@@ -174,9 +174,18 @@ button {
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 16px 24px;
+  gap: 16px;
+}
+
+.content > p {
+  max-width: 1200px;
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 
 .image_links {
@@ -185,7 +194,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin: 16px;
 }
 
 .image_links > div {
