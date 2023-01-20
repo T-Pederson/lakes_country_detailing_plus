@@ -250,6 +250,10 @@ button {
   height: 80px;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (max-width: 1200px) {
   .navbar_container {
     display: none;
