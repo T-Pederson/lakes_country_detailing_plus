@@ -3,7 +3,7 @@ import * as createElement from './createElement.js';
 // Set up paths depending current page is index.html or not
 let footerLogo;
 let indexPath;
-if (window.location.pathname.includes('index.html') || !window.location.pathname.includes('html')) {
+if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   footerLogo = 'images/full.svg';
   indexPath = 'index.html';
 } else {
