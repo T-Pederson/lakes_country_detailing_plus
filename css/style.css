@@ -175,7 +175,7 @@ button {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   padding: 16px 24px;
@@ -186,6 +186,7 @@ button {
   max-width: 1200px;
   line-height: 1.5em;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .image_links {
