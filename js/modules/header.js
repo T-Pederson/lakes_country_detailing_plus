@@ -13,7 +13,7 @@ let paintCorrectionPath;
 let windowTintingPath;
 let glassChipRepairPath;
 let ContactUsPath;
-if (window.location.pathname.includes('index.html')) {
+if (window.location.pathname.includes('index.html') || !window.location.pathname.includes('html')) {
   logoIcon = 'images/icon.svg';
   logoText = 'images/text.svg';
   expandMore = 'images/expand_more.svg';
