@@ -4,9 +4,11 @@ export function div(className='') {
   return div;
 }
 
-export function a(href='') {
+export function a(href='', className='', textContent='') {
   const a = document.createElement('a');
   a.href = href;
+  a.className = className;
+  a.textContent = textContent;
   return a;
 }
 
@@ -22,4 +24,10 @@ export function p(textContent) {
   const p = document.createElement('p');
   p.textContent = textContent;
   return p;
+}
+
+export function span(textContent) {
+  const span = document.createElement('span');
+  span.textContent = textContent;
+  return span;
 }
