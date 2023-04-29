@@ -78,12 +78,6 @@ export function populateHeader() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const headlightRestorationHref = createElement.a(headlightRestorationPath);
-  servicesDropdown.appendChild(headlightRestorationHref);
-  headlightRestorationHref.appendChild(createElement.div());
-  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
-
   const paintCorrectionHref = createElement.a(paintCorrectionPath);
   servicesDropdown.appendChild(paintCorrectionHref);
   paintCorrectionHref.appendChild(createElement.div());
@@ -95,6 +89,12 @@ export function populateHeader() {
   glassChipRepairHref.appendChild(createElement.div());
   glassChipRepairHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP/SCRATCH REPAIR'));
+
+  const headlightRestorationHref = createElement.a(headlightRestorationPath);
+  servicesDropdown.appendChild(headlightRestorationHref);
+  headlightRestorationHref.appendChild(createElement.div());
+  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
@@ -127,12 +127,6 @@ export function populateMobileDropdown() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const headlightRestorationHref = createElement.a(headlightRestorationPath, 'service');
-  mobileServicesDropdown.appendChild(headlightRestorationHref);
-  headlightRestorationHref.appendChild(createElement.div());
-  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
-
   const paintCorrectionHref = createElement.a(paintCorrectionPath, 'service');
   mobileServicesDropdown.appendChild(paintCorrectionHref);
   paintCorrectionHref.appendChild(createElement.div());
@@ -144,4 +138,10 @@ export function populateMobileDropdown() {
   glassChipRepairHref.appendChild(createElement.div());
   glassChipRepairHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP/SCRATCH REPAIR'));
+
+  const headlightRestorationHref = createElement.a(headlightRestorationPath, 'service');
+  mobileServicesDropdown.appendChild(headlightRestorationHref);
+  headlightRestorationHref.appendChild(createElement.div());
+  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 }
