@@ -100,7 +100,7 @@ export function populateHeader() {
   servicesDropdown.appendChild(glassChipRepairHref);
   glassChipRepairHref.appendChild(createElement.div());
   glassChipRepairHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP REPAIR'));
+  glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP/SCRATCH REPAIR'));
 
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
@@ -155,5 +155,5 @@ export function populateMobileDropdown() {
   mobileServicesDropdown.appendChild(glassChipRepairHref);
   glassChipRepairHref.appendChild(createElement.div());
   glassChipRepairHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP REPAIR'));
+  glassChipRepairHref.firstChild.appendChild(createElement.p('GLASS CHIP/SCRATCH REPAIR'));
 }

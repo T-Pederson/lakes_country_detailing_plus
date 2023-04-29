@@ -3,12 +3,18 @@ import * as createElement from './createElement.js';
 // Set up paths depending current page is index.html or not
 let footerLogo;
 let indexPath;
+let fbLogo;
+let igLogo
 if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   footerLogo = 'images/full.svg';
   indexPath = 'index.html';
+  fbLogo = 'images/facebook.svg';
+  igLogo = 'images/instagram.svg';
 } else {
   footerLogo = '../images/full.svg';
   indexPath = '../index.html';
+  fbLogo = '../images/facebook.svg';
+  igLogo = '../images/instagram.svg';
 }
 
 export function populateFooter() {
@@ -29,6 +35,15 @@ export function populateFooter() {
   contactSubDiv.appendChild(createElement.a('mailto:lakescountrydetailing@gmail.com', 'underline', 'Lakescountrydetailing@gmail.com'));
   contactSubDiv.appendChild(createElement.span(' • '));
   contactSubDiv.appendChild(createElement.a('tel: 2187312897', 'underline', '(218) 731-2897'));
+
+  const socialsSubDiv = createElement.div('socials');
+  contactDiv.appendChild(socialsSubDiv);
+  const fbHref = createElement.a("https://www.facebook.com/LakesCountryDetailing")
+  socialsSubDiv.appendChild(fbHref)
+  const igHref = createElement.a("https://www.instagram.com/lakescountrydetailing/")
+  socialsSubDiv.appendChild(igHref)
+  fbHref.appendChild(createElement.img(fbLogo, 'facebook', 'socials_logo'));
+  igHref.appendChild(createElement.img(igLogo, 'instagram', 'socials_logo'));
 
   // Populate copyright info and website credit
   const copyright = createElement.div('copyright');
