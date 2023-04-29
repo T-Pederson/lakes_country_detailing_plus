@@ -33,7 +33,7 @@ export function populateFooter() {
   // Populate copyright info and website credit
   const copyright = createElement.div('copyright');
   footer.appendChild(copyright);
-  copyright.appendChild(createElement.p('2022 © Lakes Country Detailing Plus'));
+  copyright.appendChild(createElement.p('2023 © Lakes Country Detailing Plus'));
 
   const copyrightDiv = createElement.div();
   copyright.appendChild(copyrightDiv);
