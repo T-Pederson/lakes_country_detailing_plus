@@ -90,12 +90,6 @@ export function populateHeader() {
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
 
-  const windowTintingHref = createElement.a(windowTintingPath);
-  servicesDropdown.appendChild(windowTintingHref);
-  windowTintingHref.appendChild(createElement.div());
-  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
-
   const glassChipRepairHref = createElement.a(glassChipRepairPath);
   servicesDropdown.appendChild(glassChipRepairHref);
   glassChipRepairHref.appendChild(createElement.div());
@@ -144,12 +138,6 @@ export function populateMobileDropdown() {
   paintCorrectionHref.appendChild(createElement.div());
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
-
-  const windowTintingHref = createElement.a(windowTintingPath, 'service');
-  mobileServicesDropdown.appendChild(windowTintingHref);
-  windowTintingHref.appendChild(createElement.div());
-  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
 
   const glassChipRepairHref = createElement.a(glassChipRepairPath, 'service');
   mobileServicesDropdown.appendChild(glassChipRepairHref);

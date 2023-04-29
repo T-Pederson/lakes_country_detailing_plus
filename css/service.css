@@ -13,15 +13,6 @@ h1 {
   margin: 0;
 }
 
-hr {
-  width: 100%;
-  max-width: 1200px;
-  height: 1px;
-  border: none;
-  background-color: #ccc;
-  margin: 0;
-}
-
 .description {
   max-width: 1200px;
   display: flex;
