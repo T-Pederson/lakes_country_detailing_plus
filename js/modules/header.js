@@ -8,7 +8,7 @@ let chevronRight;
 let menuIcon;
 let indexPath;
 let autoDetailingPath;
-let mpsDetailingPath;
+let headlightRestorationPath;
 let paintCorrectionPath;
 let windowTintingPath;
 let glassChipRepairPath;
@@ -21,7 +21,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   menuIcon = 'images/menu.svg';
   indexPath = 'index.html';
   autoDetailingPath = 'html/auto_detailing.html';
-  mpsDetailingPath = 'html/marine_power_sport_detailing.html';
+  headlightRestorationPath = 'html/headlight_restoration.html';
   paintCorrectionPath = 'html/paint_correction.html';
   windowTintingPath = 'html/window_tinting.html';
   glassChipRepairPath = 'html/glass_chip_repair.html';
@@ -34,7 +34,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   menuIcon = '../images/menu.svg';
   indexPath = '../index.html';
   autoDetailingPath = 'auto_detailing.html';
-  mpsDetailingPath = 'marine_power_sport_detailing.html';
+  headlightRestorationPath = 'headlight_restoration.html';
   paintCorrectionPath = 'paint_correction.html';
   windowTintingPath = 'window_tinting.html';
   glassChipRepairPath = 'glass_chip_repair.html';
@@ -78,11 +78,11 @@ export function populateHeader() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const mpsDetailingHref = createElement.a(mpsDetailingPath);
-  servicesDropdown.appendChild(mpsDetailingHref);
-  mpsDetailingHref.appendChild(createElement.div());
-  mpsDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  mpsDetailingHref.firstChild.appendChild(createElement.p('MARINE & POWER SPORT DETAILING'));
+  const headlightRestorationHref = createElement.a(headlightRestorationPath);
+  servicesDropdown.appendChild(headlightRestorationHref);
+  headlightRestorationHref.appendChild(createElement.div());
+  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
   const paintCorrectionHref = createElement.a(paintCorrectionPath);
   servicesDropdown.appendChild(paintCorrectionHref);
@@ -133,11 +133,11 @@ export function populateMobileDropdown() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const mpsDetailingHref = createElement.a(mpsDetailingPath, 'service');
-  mobileServicesDropdown.appendChild(mpsDetailingHref);
-  mpsDetailingHref.appendChild(createElement.div());
-  mpsDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  mpsDetailingHref.firstChild.appendChild(createElement.p('MARINE & POWER SPORT DETAILING'));
+  const headlightRestorationHref = createElement.a(headlightRestorationPath, 'service');
+  mobileServicesDropdown.appendChild(headlightRestorationHref);
+  headlightRestorationHref.appendChild(createElement.div());
+  headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
   const paintCorrectionHref = createElement.a(paintCorrectionPath, 'service');
   mobileServicesDropdown.appendChild(paintCorrectionHref);
