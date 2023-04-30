@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding: 24px;
-  gap: 24px;
+  padding: 48px 24px;
+  gap: 48px;
 }
 
 h1 {
@@ -30,12 +30,6 @@ h1 {
   object-fit: cover;
 }
 
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-}
-
 h3 {
   font-size: 1.5em;
   font-weight: bold;
@@ -44,8 +38,14 @@ h3 {
 .step_by_step {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
   font-size: 1.2em;
+}
+
+.step_by_step div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .before_and_after {
@@ -68,6 +68,20 @@ h3 {
   background-color: #bbb;
 }
 
+.pricing {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 64px;
+}
+
+.pricing_stage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 36px;
+  font-size: 1.3em;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 2.5em;
@@ -81,11 +95,38 @@ h3 {
     font-size: 1.5em;
   }
 
+  h3 {
+    font-size: 1.3em;
+  }
+
   .step_by_step {
     font-size: 1em;
   }
 
   .request_quote {
     font-size: 1em;
+  }
+
+  .pricing {
+    grid-template-columns: auto;
+    gap: 16px;
+  }
+
+  .pricing_stage {
+    margin-bottom: 60px;
+    line-height: 28px;
+  }
+
+  .pricing_stage_last {
+    margin-bottom: 0px;
+  }
+
+  .pricing li,
+  .pricing p {
+  font-size: .75em;
+}
+
+  .pricing h3 {
+    text-align: center;
   }
 }

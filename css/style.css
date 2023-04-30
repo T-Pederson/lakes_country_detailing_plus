@@ -178,8 +178,8 @@ button {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  padding: 32px 24px;
-  gap: 32px;
+  padding: 48px 32px;
+  gap: 48px;
 }
 
 .content > p {
@@ -242,10 +242,21 @@ hr {
   margin: 0;
 }
 
+.coming_soon {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .coming_soon ul{
   display: flex;
   gap: 16px;
   font-size: 1.2em;
+}
+
+p.italic {
+  font-style: italic;
+  margin-top: 8px;
 }
 
 .footer {
@@ -285,6 +296,10 @@ hr {
 
 .underline {
   text-decoration: underline;
+}
+
+b {
+  font-weight: bold;
 }
 
 @media (max-width: 1200px) {
@@ -368,6 +383,10 @@ hr {
 
   .coming_soon .dot {
     display: none;
+  }
+
+  p.italic {
+    font-size: 0.7em;
   }
 
   .footer {
