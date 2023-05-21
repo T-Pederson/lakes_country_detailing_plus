@@ -165,6 +165,7 @@ body {
 
 .request_quote:hover {
   background-color: #ddd;
+  scale: 103%;
 }
 
 button {
@@ -202,7 +203,8 @@ button {
 } 
 
 .image_links > div:hover {
-  filter: opacity(0.9);
+  filter: opacity(0.8);
+  scale: 103%;
 }
 
 .image_links a {

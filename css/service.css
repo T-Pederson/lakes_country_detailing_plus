@@ -35,6 +35,11 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .step_by_step {
   display: flex;
   flex-direction: column;
@@ -69,17 +74,51 @@ h3 {
 }
 
 .pricing {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
   gap: 64px;
+  max-width: 1200px;
 }
 
 .pricing_stage {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  line-height: 36px;
-  font-size: 1.3em;
+  line-height: 24px;
+}
+
+.why_gclear {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 24px;
+  text-align: center;
+}
+
+.why_gclear div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.why_gclear h4 {
+  text-align: center;
+}
+
+.why_gclear div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.glass_repair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.glass_repair h3 {
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 800px) {
@@ -128,5 +167,14 @@ h3 {
 
   .pricing h3 {
     text-align: center;
+  }
+
+  .why_gclear div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .glass_repair {
+    grid-template-columns: auto;
   }
 }

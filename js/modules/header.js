@@ -9,7 +9,6 @@ let menuIcon;
 let indexPath;
 let autoDetailingPath;
 let headlightRestorationPath;
-let paintCorrectionPath;
 let windowTintingPath;
 let glassChipRepairPath;
 let ContactUsPath;
@@ -22,7 +21,6 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   indexPath = 'index.html';
   autoDetailingPath = 'html/auto_detailing.html';
   headlightRestorationPath = 'html/headlight_restoration.html';
-  paintCorrectionPath = 'html/paint_correction.html';
   windowTintingPath = 'html/window_tinting.html';
   glassChipRepairPath = 'html/glass_chip_repair.html';
   ContactUsPath = 'html/contact_us.html';
@@ -35,7 +33,6 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   indexPath = '../index.html';
   autoDetailingPath = 'auto_detailing.html';
   headlightRestorationPath = 'headlight_restoration.html';
-  paintCorrectionPath = 'paint_correction.html';
   windowTintingPath = 'window_tinting.html';
   glassChipRepairPath = 'glass_chip_repair.html';
   ContactUsPath = 'contact_us.html';
@@ -78,12 +75,6 @@ export function populateHeader() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const paintCorrectionHref = createElement.a(paintCorrectionPath);
-  servicesDropdown.appendChild(paintCorrectionHref);
-  paintCorrectionHref.appendChild(createElement.div());
-  paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
-
   const glassChipRepairHref = createElement.a(glassChipRepairPath);
   servicesDropdown.appendChild(glassChipRepairHref);
   glassChipRepairHref.appendChild(createElement.div());
@@ -95,6 +86,12 @@ export function populateHeader() {
   headlightRestorationHref.appendChild(createElement.div());
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
+
+  // const windowTintingHref = createElement.a(windowTintingPath);
+  // servicesDropdown.appendChild(windowTintingHref);
+  // windowTintingHref.appendChild(createElement.div());
+  // windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  // windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
 
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
@@ -127,12 +124,6 @@ export function populateMobileDropdown() {
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
 
-  const paintCorrectionHref = createElement.a(paintCorrectionPath, 'service');
-  mobileServicesDropdown.appendChild(paintCorrectionHref);
-  paintCorrectionHref.appendChild(createElement.div());
-  paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
-
   const glassChipRepairHref = createElement.a(glassChipRepairPath, 'service');
   mobileServicesDropdown.appendChild(glassChipRepairHref);
   glassChipRepairHref.appendChild(createElement.div());
@@ -144,4 +135,10 @@ export function populateMobileDropdown() {
   headlightRestorationHref.appendChild(createElement.div());
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
+
+  // const windowTintingHref = createElement.a(windowTintingPath, 'service');
+  // mobileServicesDropdown.appendChild(windowTintingHref);
+  // windowTintingHref.appendChild(createElement.div());
+  // windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  // windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
 }
