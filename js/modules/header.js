@@ -11,6 +11,7 @@ let autoDetailingPath;
 let headlightRestorationPath;
 let windowTintingPath;
 let glassChipRepairPath;
+let paintCorrectionPath;
 let ContactUsPath;
 if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   logoIcon = 'images/icon.svg';
@@ -23,6 +24,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   headlightRestorationPath = 'html/headlight_restoration.html';
   windowTintingPath = 'html/window_tinting.html';
   glassChipRepairPath = 'html/glass_chip_repair.html';
+  paintCorrectionPath = 'html/paint_correction.html';
   ContactUsPath = 'html/contact_us.html';
 } else {
   logoIcon = '../images/icon.svg';
@@ -35,6 +37,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   headlightRestorationPath = 'headlight_restoration.html';
   windowTintingPath = 'window_tinting.html';
   glassChipRepairPath = 'glass_chip_repair.html';
+  paintCorrectionPath = 'paint_correction.html';
   ContactUsPath = 'contact_us.html';
 }
 
@@ -87,11 +90,17 @@ export function populateHeader() {
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
-  // const windowTintingHref = createElement.a(windowTintingPath);
-  // servicesDropdown.appendChild(windowTintingHref);
-  // windowTintingHref.appendChild(createElement.div());
-  // windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  // windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
+  const windowTintingHref = createElement.a(windowTintingPath);
+  servicesDropdown.appendChild(windowTintingHref);
+  windowTintingHref.appendChild(createElement.div());
+  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
+
+  const paintCorrectionHref = createElement.a(paintCorrectionPath);
+  servicesDropdown.appendChild(paintCorrectionHref);
+  paintCorrectionHref.appendChild(createElement.div());
+  paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
 
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
@@ -136,9 +145,15 @@ export function populateMobileDropdown() {
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
-  // const windowTintingHref = createElement.a(windowTintingPath, 'service');
-  // mobileServicesDropdown.appendChild(windowTintingHref);
-  // windowTintingHref.appendChild(createElement.div());
-  // windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  // windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
+  const windowTintingHref = createElement.a(windowTintingPath, 'service');
+  mobileServicesDropdown.appendChild(windowTintingHref);
+  windowTintingHref.appendChild(createElement.div());
+  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
+
+  const paintCorrectionHref = createElement.a(paintCorrectionPath, 'service');
+  mobileServicesDropdown.appendChild(paintCorrectionHref);
+  paintCorrectionHref.appendChild(createElement.div());
+  paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
 }

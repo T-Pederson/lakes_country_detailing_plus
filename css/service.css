@@ -33,11 +33,20 @@ h1 {
 h3 {
   font-size: 1.5em;
   font-weight: bold;
+
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+li {
+  max-width: 1200px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .step_by_step {
@@ -77,6 +86,7 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -138,6 +148,11 @@ h4 {
     font-size: 1.3em;
   }
 
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+
   .step_by_step {
     font-size: 1em;
   }
@@ -159,11 +174,6 @@ h4 {
   .pricing_stage_last {
     margin-bottom: 0px;
   }
-
-  .pricing li,
-  .pricing p {
-  font-size: .75em;
-}
 
   .pricing h3 {
     text-align: center;
