@@ -13,6 +13,7 @@ let windowTintingPath;
 let glassChipRepairPath;
 let paintCorrectionPath;
 let diamondCoatingsPath;
+let woolwaxPath;
 let ContactUsPath;
 if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   logoIcon = 'images/icon.svg';
@@ -27,6 +28,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   glassChipRepairPath = 'html/glass_chip_repair.html';
   paintCorrectionPath = 'html/paint_correction.html';
   diamondCoatingsPath = 'html/diamond_coatings.html';
+  woolwaxPath = 'html/woolwax.html';
   ContactUsPath = 'html/contact_us.html';
 } else {
   logoIcon = '../images/icon.svg';
@@ -41,6 +43,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   glassChipRepairPath = 'glass_chip_repair.html';
   paintCorrectionPath = 'paint_correction.html';
   diamondCoatingsPath = 'diamond_coatings.html';
+  woolwaxPath = 'woolwax.html';
   ContactUsPath = 'contact_us.html';
 }
 
@@ -111,6 +114,12 @@ export function populateHeader() {
   diamondCoatingsHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   diamondCoatingsHref.firstChild.appendChild(createElement.p('DIAMOND COATINGS'));
 
+  const woolwaxHref = createElement.a(woolwaxPath);
+  servicesDropdown.appendChild(woolwaxHref);
+  woolwaxHref.appendChild(createElement.div());
+  woolwaxHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  woolwaxHref.firstChild.appendChild(createElement.p('WOOLWAX'));
+
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
 }
@@ -171,4 +180,10 @@ export function populateMobileDropdown() {
   diamondCoatingsHref.appendChild(createElement.div());
   diamondCoatingsHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   diamondCoatingsHref.firstChild.appendChild(createElement.p('DIAMOND COATINGS'));
+
+  const woolwaxHref = createElement.a(woolwaxPath, 'service');
+  mobileServicesDropdown.appendChild(woolwaxHref);
+  woolwaxHref.appendChild(createElement.div());
+  woolwaxHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  woolwaxHref.firstChild.appendChild(createElement.p('WOOLWAX'));
 }

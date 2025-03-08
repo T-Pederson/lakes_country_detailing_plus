@@ -305,6 +305,10 @@ b {
   font-weight: bold;
 }
 
+.woolwax_lineup {
+  height: 40em;
+}
+
 @media (max-width: 1200px) {
   .navbar_container {
     display: none;
@@ -409,11 +413,15 @@ b {
   .footer_logo {
     height: 48px;
   }
-}
 
   .socials_logo {
     height: 32px;
   }
+
+  .woolwax_lineup {
+    height: 20em;
+  }
+}
 
 @media (max-width: 813px) {
   .content {
