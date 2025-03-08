@@ -309,6 +309,37 @@ b {
   height: 40em;
 }
 
+.manufacturer_logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.manufacturer_logos a {
+  height: 3em;
+  padding: 0.3em;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+
+.manufacturer_logos a:hover {
+  scale: 105%;
+}
+
+.manufacturer_logos img {
+  height: 3em;
+}
+
+.logo_black_bg {
+  background-color: black;
+}
+
+.logo_white_bg {
+  background-color: white;
+}
+
 @media (max-width: 1200px) {
   .navbar_container {
     display: none;
@@ -420,6 +451,10 @@ b {
 
   .woolwax_lineup {
     height: 20em;
+  }
+
+  .manufacturer_logos img {
+    height: 2.5em;
   }
 }
 

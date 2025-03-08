@@ -14,6 +14,7 @@ let glassChipRepairPath;
 let paintCorrectionPath;
 let diamondCoatingsPath;
 let woolwaxPath;
+let truckAccessoriesPath;
 let ContactUsPath;
 if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   logoIcon = 'images/icon.svg';
@@ -29,6 +30,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   paintCorrectionPath = 'html/paint_correction.html';
   diamondCoatingsPath = 'html/diamond_coatings.html';
   woolwaxPath = 'html/woolwax.html';
+  truckAccessoriesPath = 'html/truck_accessories.html';
   ContactUsPath = 'html/contact_us.html';
 } else {
   logoIcon = '../images/icon.svg';
@@ -44,6 +46,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   paintCorrectionPath = 'paint_correction.html';
   diamondCoatingsPath = 'diamond_coatings.html';
   woolwaxPath = 'woolwax.html';
+  truckAccessoriesPath = 'truck_accessories.html';
   ContactUsPath = 'contact_us.html';
 }
 
@@ -120,6 +123,12 @@ export function populateHeader() {
   woolwaxHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   woolwaxHref.firstChild.appendChild(createElement.p('WOOLWAX'));
 
+  const truckAccessoriesHref = createElement.a(truckAccessoriesPath);
+  servicesDropdown.appendChild(truckAccessoriesHref);
+  truckAccessoriesHref.appendChild(createElement.div());
+  truckAccessoriesHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  truckAccessoriesHref.firstChild.appendChild(createElement.p('TRUCK ACCESSORIES'));
+
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
 }
@@ -186,4 +195,10 @@ export function populateMobileDropdown() {
   woolwaxHref.appendChild(createElement.div());
   woolwaxHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   woolwaxHref.firstChild.appendChild(createElement.p('WOOLWAX'));
+
+  const truckAccessoriesHref = createElement.a(truckAccessoriesPath, 'service');
+  mobileServicesDropdown.appendChild(truckAccessoriesHref);
+  truckAccessoriesHref.appendChild(createElement.div());
+  truckAccessoriesHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  truckAccessoriesHref.firstChild.appendChild(createElement.p('TRUCK ACCESSORIES'));
 }
