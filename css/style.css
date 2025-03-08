@@ -190,8 +190,8 @@ button {
 }
 
 .image_links {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -341,6 +341,14 @@ b {
 }
 
 @media (max-width: 1200px) {
+  .image_links {
+    grid-template-columns: auto auto;
+  }
+
+  .image_links img {
+    height: 150px;
+  }
+
   .navbar_container {
     display: none;
   }
