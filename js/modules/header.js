@@ -12,6 +12,7 @@ let headlightRestorationPath;
 let windowTintingPath;
 let glassChipRepairPath;
 let paintCorrectionPath;
+let diamondCoatingsPath;
 let ContactUsPath;
 if (window.location.pathname.includes('index.html') || !(window.location.pathname.includes('html'))) {
   logoIcon = 'images/icon.svg';
@@ -25,6 +26,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   windowTintingPath = 'html/window_tinting.html';
   glassChipRepairPath = 'html/glass_chip_repair.html';
   paintCorrectionPath = 'html/paint_correction.html';
+  diamondCoatingsPath = 'html/diamond_coatings.html';
   ContactUsPath = 'html/contact_us.html';
 } else {
   logoIcon = '../images/icon.svg';
@@ -38,6 +40,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   windowTintingPath = 'window_tinting.html';
   glassChipRepairPath = 'glass_chip_repair.html';
   paintCorrectionPath = 'paint_correction.html';
+  diamondCoatingsPath = 'diamond_coatings.html';
   ContactUsPath = 'contact_us.html';
 }
 
@@ -102,6 +105,12 @@ export function populateHeader() {
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
 
+  const diamondCoatingsHref = createElement.a(diamondCoatingsPath);
+  servicesDropdown.appendChild(diamondCoatingsHref);
+  diamondCoatingsHref.appendChild(createElement.div());
+  diamondCoatingsHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  diamondCoatingsHref.firstChild.appendChild(createElement.p('DIAMOND COATINGS'));
+
   // Add mobile menu icon
   header.appendChild(createElement.img(menuIcon, 'menu', 'menu'));
 }
@@ -156,4 +165,10 @@ export function populateMobileDropdown() {
   paintCorrectionHref.appendChild(createElement.div());
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
+
+  const diamondCoatingsHref = createElement.a(diamondCoatingsPath, 'service');
+  mobileServicesDropdown.appendChild(diamondCoatingsHref);
+  diamondCoatingsHref.appendChild(createElement.div());
+  diamondCoatingsHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  diamondCoatingsHref.firstChild.appendChild(createElement.p('DIAMOND COATINGS'));
 }
