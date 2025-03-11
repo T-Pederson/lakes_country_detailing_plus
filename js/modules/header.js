@@ -23,15 +23,15 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   chevronRight = 'images/chevron_right.svg';
   menuIcon = 'images/menu.svg';
   indexPath = 'index.html';
-  autoDetailingPath = 'html/auto_detailing.html';
-  headlightRestorationPath = 'html/headlight_restoration.html';
-  windowTintingPath = 'html/window_tinting.html';
-  glassChipRepairPath = 'html/glass_chip_repair.html';
-  paintCorrectionPath = 'html/paint_correction.html';
-  diamondCoatingsPath = 'html/diamond_coatings.html';
+  autoDetailingPath = 'html/auto-detailing.html';
+  headlightRestorationPath = 'html/headlight-restoration.html';
+  windowTintingPath = 'html/window-tinting.html';
+  glassChipRepairPath = 'html/glass-chip-repair.html';
+  paintCorrectionPath = 'html/paint-correction.html';
+  diamondCoatingsPath = 'html/diamond-coatings.html';
   woolwaxPath = 'html/woolwax.html';
-  truckAccessoriesPath = 'html/truck_accessories.html';
-  ContactUsPath = 'html/contact_us.html';
+  truckAccessoriesPath = 'html/truck-accessories.html';
+  ContactUsPath = 'html/contact-us.html';
 } else {
   logoIcon = '../images/icon.svg';
   logoText = '../images/text.svg';
@@ -39,15 +39,15 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   chevronRight = '../images/chevron_right.svg';
   menuIcon = '../images/menu.svg';
   indexPath = '../index.html';
-  autoDetailingPath = 'auto_detailing.html';
-  headlightRestorationPath = 'headlight_restoration.html';
-  windowTintingPath = 'window_tinting.html';
-  glassChipRepairPath = 'glass_chip_repair.html';
-  paintCorrectionPath = 'paint_correction.html';
-  diamondCoatingsPath = 'diamond_coatings.html';
+  autoDetailingPath = 'auto-detailing.html';
+  headlightRestorationPath = 'headlight-restoration.html';
+  windowTintingPath = 'window-tinting.html';
+  glassChipRepairPath = 'glass-chip-repair.html';
+  paintCorrectionPath = 'paint-correction.html';
+  diamondCoatingsPath = 'diamond-coatings.html';
   woolwaxPath = 'woolwax.html';
-  truckAccessoriesPath = 'truck_accessories.html';
-  ContactUsPath = 'contact_us.html';
+  truckAccessoriesPath = 'truck-accessories.html';
+  ContactUsPath = 'contact-us.html';
 }
 
 export function populateHeader() {
