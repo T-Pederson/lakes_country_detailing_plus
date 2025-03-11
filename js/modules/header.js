@@ -99,17 +99,17 @@ export function populateHeader() {
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
-  const windowTintingHref = createElement.a(windowTintingPath);
-  servicesDropdown.appendChild(windowTintingHref);
-  windowTintingHref.appendChild(createElement.div());
-  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
-
   const paintCorrectionHref = createElement.a(paintCorrectionPath);
   servicesDropdown.appendChild(paintCorrectionHref);
   paintCorrectionHref.appendChild(createElement.div());
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
+
+  const windowTintingHref = createElement.a(windowTintingPath);
+  servicesDropdown.appendChild(windowTintingHref);
+  windowTintingHref.appendChild(createElement.div());
+  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  windowTintingHref.firstChild.appendChild(createElement.p('FLEXFILM WINDOW TINTING'));
 
   const diamondCoatingsHref = createElement.a(diamondCoatingsPath);
   servicesDropdown.appendChild(diamondCoatingsHref);
@@ -172,17 +172,17 @@ export function populateMobileDropdown() {
   headlightRestorationHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   headlightRestorationHref.firstChild.appendChild(createElement.p('HEADLIGHT RESTORATION'));
 
-  const windowTintingHref = createElement.a(windowTintingPath, 'service');
-  mobileServicesDropdown.appendChild(windowTintingHref);
-  windowTintingHref.appendChild(createElement.div());
-  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
-  windowTintingHref.firstChild.appendChild(createElement.p('WINDOW TINTING'));
-
   const paintCorrectionHref = createElement.a(paintCorrectionPath, 'service');
   mobileServicesDropdown.appendChild(paintCorrectionHref);
   paintCorrectionHref.appendChild(createElement.div());
   paintCorrectionHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   paintCorrectionHref.firstChild.appendChild(createElement.p('PAINT CORRECTION'));
+
+  const windowTintingHref = createElement.a(windowTintingPath, 'service');
+  mobileServicesDropdown.appendChild(windowTintingHref);
+  windowTintingHref.appendChild(createElement.div());
+  windowTintingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  windowTintingHref.firstChild.appendChild(createElement.p('FLEXFILM WINDOW TINTING'));
 
   const diamondCoatingsHref = createElement.a(diamondCoatingsPath, 'service');
   mobileServicesDropdown.appendChild(diamondCoatingsHref);

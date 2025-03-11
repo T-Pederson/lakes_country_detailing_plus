@@ -44,7 +44,6 @@ h4 {
 li {
   max-width: 1200px;
   line-height: 1.5em;
-  font-size: 1.1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -75,6 +74,23 @@ li {
   height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 2;
+}
+
+.flexfilm_images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  justify-items: center;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.flexfilm_images p {
+  font-size: 2em;
+}
+
+.flexfilm_image {
+  width: 100%;
 }
 
 .request_quote {
@@ -186,5 +202,9 @@ li {
 
   .glass_repair {
     grid-template-columns: auto;
+  }
+
+  .flexfilm_images {
+    grid-template-columns: 1fr;
   }
 }

@@ -340,6 +340,14 @@ b {
   background-color: white;
 }
 
+.content_header {
+  justify-items: center;
+}
+
+.ida_logo {
+  height: 8em;
+}
+
 @media (max-width: 1200px) {
   .image_links {
     grid-template-columns: auto auto;
