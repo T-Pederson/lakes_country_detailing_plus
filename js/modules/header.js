@@ -8,6 +8,7 @@ let chevronRight;
 let menuIcon;
 let indexPath;
 let autoDetailingPath;
+let marineDetailingPath;
 let headlightRestorationPath;
 let windowTintingPath;
 let glassChipRepairPath;
@@ -24,6 +25,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   menuIcon = 'images/menu.svg';
   indexPath = 'index.html';
   autoDetailingPath = 'html/auto-detailing.html';
+  marineDetailingPath = 'html/marine-detailing.html';
   headlightRestorationPath = 'html/headlight-restoration.html';
   windowTintingPath = 'html/window-tinting.html';
   glassChipRepairPath = 'html/glass-chip-repair.html';
@@ -40,6 +42,7 @@ if (window.location.pathname.includes('index.html') || !(window.location.pathnam
   menuIcon = '../images/menu.svg';
   indexPath = '../index.html';
   autoDetailingPath = 'auto-detailing.html';
+  marineDetailingPath = 'marine-detailing.html';
   headlightRestorationPath = 'headlight-restoration.html';
   windowTintingPath = 'window-tinting.html';
   glassChipRepairPath = 'glass-chip-repair.html';
@@ -86,6 +89,12 @@ export function populateHeader() {
   autoDetailingHref.appendChild(createElement.div());
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
+
+  const marineDetailingHref = createElement.a(marineDetailingPath);
+  servicesDropdown.appendChild(marineDetailingHref);
+  marineDetailingHref.appendChild(createElement.div());
+  marineDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  marineDetailingHref.firstChild.appendChild(createElement.p('MARINE DETAILING'));
 
   const glassChipRepairHref = createElement.a(glassChipRepairPath);
   servicesDropdown.appendChild(glassChipRepairHref);
@@ -159,6 +168,12 @@ export function populateMobileDropdown() {
   autoDetailingHref.appendChild(createElement.div());
   autoDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
   autoDetailingHref.firstChild.appendChild(createElement.p('AUTO DETAILING'));
+
+  const marineDetailingHref = createElement.a(marineDetailingPath, 'service');
+  mobileServicesDropdown.appendChild(marineDetailingHref);
+  marineDetailingHref.appendChild(createElement.div());
+  marineDetailingHref.firstChild.appendChild(createElement.img(chevronRight, 'chevron right', 'arrow_icon'));
+  marineDetailingHref.firstChild.appendChild(createElement.p('MARINE DETAILING'));
 
   const glassChipRepairHref = createElement.a(glassChipRepairPath, 'service');
   mobileServicesDropdown.appendChild(glassChipRepairHref);
